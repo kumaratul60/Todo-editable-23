@@ -1,0 +1,39 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+  border-bottom: 2px solid gray;
+}
+.items:hover .close {
+  opacity: 1;
+}
+
+.done {
+  cursor: pointer;
+  border: 2px solid lawngreen;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.close {
+  cursor: pointer;
+  border: 2px solid red;
+  opacity: 0;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  font: 1.2rem;
+}
+.strike {
+  text-decoration: line-through;
+}
